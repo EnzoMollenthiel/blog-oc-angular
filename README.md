@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
+## START
+
+* http://exercices.openclassrooms.com/assessment/731?id=4668271&slug=developpez-des-applications-web-avec-angular&login=8584208&tk=0e3a721bc12a6aa1ad455b0403ff295a&sbd=2016-02-01&sbdtk=fa78d6dd3126b956265a25af9b322d55
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
