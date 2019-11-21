@@ -1,0 +1,10 @@
+<li class="list-group-item my-2">
+    <h4> {{ articleName }} </h4>
+    <p> {{ articleContent }} </p>
+    <button class="btn btn-success mx-2" 
+              [disabled]="isAuth"
+              (click)="onAllumer()">Love it !</button>
+    <button class="btn btn-success mx-2" 
+              [disabled]="isAuth"
+              (click)="onAllumer()">Don't love it !</button>
+</li>
