@@ -8,6 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my awesome app';
 
- 
+  constructor() { }
+
+  onUp() {
+    console.log('up'); 
+  }
+
+  onDown() {
+    console.log('down');
+  }
 }
 
