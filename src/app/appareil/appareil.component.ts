@@ -7,6 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AppareilComponent implements OnInit {
 
+  /**
+   * Attribut appareilName
+   * @Input() permet de récupérer la valeure passée dans la balise app-appareil
+   * https://angular.io/api/core/Input
+   */
   @Input() appareilName: string;
   @Input() appareilStatus: string;
 

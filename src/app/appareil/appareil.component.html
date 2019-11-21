@@ -1,8 +1,25 @@
+<!-- 
+     ngClass permet d'ajouter des classes à des balises HTML selon des conditions
+     https://angular.io/api/common/NgClass
+-->
 <li [ngClass]="{'list-group-item': true,
                 'list-group-item-success': appareilStatus === 'allumé',
                 'list-group-item-danger': appareilStatus ===  'éteint'}">
-    <div style="width:20px;height:20px;background-color:red;" 
-         *ngIf="appareilStatus === 'éteint'"></div>
-    <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
-    <input type="text" class="form-control" [(ngModel)]="appareilName">
+
+     <!--
+          ngIf permet de conditionner l'affichage d'un élément selon le résultat d'une condition renvoyant un boulean
+          https://angular.io/api/common/NgIf
+      -->
+     <div style="width:20px;height:20px;background-color:red;" *ngIf="appareilStatus === 'éteint'"></div>
+     <!--
+          ngStyle permet de conditionner le style appliqué à un élément HTML selon le résultat d'une condition renvoyant un boulean
+     -->
+     <h4 [ngStyle]="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{ getStatus() }}</h4>
+
+     <!--
+          ngModel permter de binder la valeure d'un élément HTML avec un attribut du component associé au template actuellement présent
+          ici, le modèle appliqué à l'imput ci-dessous correspond à la valeure de l'attribut appareilName
+          https://angular.io/api/forms/NgModel 
+     -->
+     <input type="text" class="form-control" [(ngModel)]="appareilName">
 </li>
