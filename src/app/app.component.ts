@@ -10,12 +10,6 @@ export class AppComponent {
 
   constructor() { }
 
-  onUp() {
-    console.log('up'); 
-  }
-
-  onDown() {
-    console.log('down');
-  }
+ 
 }
 

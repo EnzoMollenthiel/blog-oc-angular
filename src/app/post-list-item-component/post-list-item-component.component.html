@@ -1,0 +1,10 @@
+<li class="list-group-item my-2"
+    [ngClass]="{'bg-success': loveIts > 0, 'bg-danger': loveIts < 0}">
+    <h4>{{ title }}</h4>
+    <p>{{ created_at | date: 'short' | uppercase}}</p>
+    <p>{{ content }}</p>
+    <button class="btn btn-success mx-2" 
+            (click)="onUp()">Love it !</button>
+    <button class="btn btn-success mx-2 bg-danger border-danger" 
+            (click)="onDown()">Don't love it !</button>
+</li>
